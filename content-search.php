@@ -20,7 +20,11 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php if ( 'image' == get_post_format() ) : ?>
+			<p>[image]</p>
+		<? else: ?>
+			<?php the_excerpt(); ?>
+		<?php endif; ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">

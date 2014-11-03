@@ -17,6 +17,9 @@
 
 	<footer class="entry-footer">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+			<div class="entry-meta">
+				<?php flot_posted_on(); ?>
+			</div><!-- .entry-meta -->
 			<?php
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'flot' ) );

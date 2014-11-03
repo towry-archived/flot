@@ -121,6 +121,11 @@ function flot_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script( 'jquery' );
+	
+	// last
+	wp_enqueue_script( 'flot-main-script', get_template_directory_uri() . '/js/flot.js', array( 'jquery' ), '20120206', true );
 }
 add_action( 'wp_enqueue_scripts', 'flot_scripts' );
 

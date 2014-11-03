@@ -21,6 +21,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<div id="lightbox" style="display:none; text-align: center; z-index:99999; background-color: rgba(0,0,0,.8); width:100%;height:100%;position:fixed;top:0px;left:0;"></div>
 
 <?php wp_footer(); ?>
 
