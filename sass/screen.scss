@@ -94,6 +94,10 @@ blockquote {
 	margin-bottom: .8em;
 }
 
+table {
+	margin-bottom: 15px;
+}
+
 table tr {
 	border-top: 1px solid #ccc;
 	background-color: #fff;
@@ -106,6 +110,7 @@ table td {
 }
 
 pre {
+	margin-bottom: 15px;
 	background: lighten($site-title-color,10%);
 	color: white;
 	padding: 5px 10px;
